@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Yoel Roring - MID Project</title>
+	</head>
+
+	<body>
+        <nav class="navbar-expand-lg navbar-light bg-light navbar bg-primary">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="" class="navbar-brand">RoringYMiniApp</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="text-light" href="">Home</a>
+                    </li>
+                    <li> 
+                        <a class="text-light" href="">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid row">
+            <div class="container-fluid">
+                <form>
+                    <div class="form-group">
+                        <label>Student ID</label>
+                        <input type="text" placeholder="id" id="id" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="name" id="name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label> <br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="form-group">
+                        <h3>Falcuty</h3>
+                        <select name="falcuty" id="falcuty" class="form-control">
+                            <option value="komputer">Ilmu Komputer</option>
+                            <option value="ekonomi">Ekonomi</option>
+                            <option value="keperawatan">Keperawatan</option>
+                            <option value="pendidikan">Pendidikan</option>
+                            <option value="pertanian">Pertanian</option>
+                            <option value="sekertaris">Sekertaris</option>
+                            <option value="filsafat">Filsafat</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <h3>Prodi</h3>
+                        <select name="prodi" id="prodi" class="form-control">
+                            <option value="informatika">Teknik Informatika</option>
+                            <option value="informasi">Sistem Informasi</option>
+                            <option value="management">Management</option>
+                            <option value="accounting">Accounting</option>
+                            <option value="keperawatan">Keperawatan</option>
+                            <option value="nursing">Nursing</option>
+                            <option value="inggris">Bahasa Inggris</option>
+                            <option value="ekonomi">Ekonomi</option>
+                            <option value="agama">Agama</option>
+                            <option value="sekolah">Luar Sekolah</option>
+                            <option value="pertanian">Pertanian</option>
+                            <option value="sekertaris">Sekertaris</option>
+                            <option value="filsafat">Filsafat</option>
+                            <option value="filsafat">Magister Filsafat</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="container-fluid">
+                <div class="form-group">
+                    <h3>Falcuty</h3>
+                    <select name="falcuty" id="falcuty" class="form-control">
+                        <option value="komputer">Ilmu Komputer</option>
+                        <option value="ekonomi">Ekonomi</option>
+                        <option value="keperawatan">Keperawatan</option>
+                        <option value="pendidikan">Pendidikan</option>
+                        <option value="pertanian">Pertanian</option>
+                        <option value="sekertaris">Sekertaris</option>
+                        <option value="filsafat">Filsafat</option>
+                    </select>
+                </div>
+                <button class="btn-primary btn-lg btn-block">Filter Student By Falcuty</button>
+                <div class="form-group">
+                    <h3>Prodi</h3>
+                    <select name="prodi" id="prodi" class="form-control">
+                        <option value="informatika">Teknik Informatika</option>
+                        <option value="informasi">Sistem Informasi</option>
+                        <option value="management">Management</option>
+                        <option value="accounting">Accounting</option>
+                        <option value="keperawatan">Keperawatan</option>
+                        <option value="nursing">Nursing</option>
+                        <option value="inggris">Bahasa Inggris</option>
+                        <option value="ekonomi">Ekonomi</option>
+                        <option value="agama">Agama</option>
+                        <option value="sekolah">Luar Sekolah</option>
+                        <option value="pertanian">Pertanian</option>
+                        <option value="sekertaris">Sekertaris</option>
+                        <option value="filsafat">Filsafat</option>
+                        <option value="filsafat">Magister Filsafat</option>
+                    </select>
+                </div>
+                <button class="btn-primary btn-lg btn-block">Filter Student By Prodi</button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <table class="table">
+                <thead>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Falcuty</th>
+                    <th>Prodi</th>
+                    <th>Action</th>
+                </thead>
+            </table>
+        </div>
+    </body>
+</html>
