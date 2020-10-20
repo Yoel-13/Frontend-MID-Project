@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -30,7 +31,7 @@
         </nav>
         <div class="container-fluid row">
             <div class="container-fluid">
-                <form>
+                <form class = "form">
                     <div class="form-group">
                         <label>Student ID</label>
                         <input type="text" placeholder="id" id="id" class="form-control">
@@ -63,8 +64,8 @@
                         <select name="prodi" id="prodi" class="form-control">
                             <option value="informatika">Teknik Informatika</option>
                             <option value="informasi">Sistem Informasi</option>
-                            <option value="management">Management</option>
-                            <option value="accounting">Accounting</option>
+                            <option value="manajemen">Manajemen</option>
+                            <option value="akuntansi">Akuntansi</option>
                             <option value="keperawatan">Keperawatan</option>
                             <option value="nursing">Nursing</option>
                             <option value="inggris">Bahasa Inggris</option>
@@ -98,8 +99,8 @@
                     <select name="prodi" id="prodi" class="form-control">
                         <option value="informatika">Teknik Informatika</option>
                         <option value="informasi">Sistem Informasi</option>
-                        <option value="management">Management</option>
-                        <option value="accounting">Accounting</option>
+                        <option value="manajemen">Manajemen</option>
+                        <option value="akuntansi">Akuntansi</option>
                         <option value="keperawatan">Keperawatan</option>
                         <option value="nursing">Nursing</option>
                         <option value="inggris">Bahasa Inggris</option>
@@ -115,7 +116,9 @@
                 <button class="btn-primary btn-lg btn-block">Filter Student By Prodi</button>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid mb-5 mt-5">
+            <h1>Our Students</h1>
+            <input type="text" name="search" placeholder="search" id="searchbox">
             <table class="table">
                 <thead>
                     <th>Student ID</th>
@@ -127,5 +130,20 @@
                 </thead>
             </table>
         </div>
+        <footer class="mt-5">
+            <ul id="footercontent1" class="mb-0">
+                <li>Made with</li>
+                <li><i class="fab fa-js-square"></i></li>
+                <li><i class="fab fa-bootstrap"></i></li>
+                <li><i class="fab fa-font-awesome-flag"></i></li>
+            </ul>
+            <ul id="footercontent2" class="mb-0">
+                <li>Yoel</li>
+                <li><i class="fas fa-fire text-danger"></i></li>
+                <li><i class="far fa-copyright"></i></li>
+                <li>2020</li>
+            </ul>
+        </footer>
+        <script src="index.js"></script>
     </body>
 </html>
