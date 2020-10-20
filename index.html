@@ -49,7 +49,7 @@
                     </div>
                     <div class="form-group">
                         <h3>Falcuty</h3>
-                        <select name="falcuty" id="falcuty" class="form-control">
+                        <select name="faculty" id="fakultas" class="form-control">
                             <option value="komputer">Ilmu Komputer</option>
                             <option value="ekonomi">Ekonomi</option>
                             <option value="keperawatan">Keperawatan</option>
@@ -78,11 +78,12 @@
                             <option value="filsafat">Magister Filsafat</option>
                         </select>
                     </div>
+                    <button type="submit" name="button" class="btn btn-primary btn-lg">Add</button>
                 </form>
             </div>
             <div class="container-fluid">
                 <div class="form-group">
-                    <h3>Falcuty</h3>
+                    <h3>Faculty</h3>
                     <select name="falcuty" id="falcuty" class="form-control">
                         <option value="komputer">Ilmu Komputer</option>
                         <option value="ekonomi">Ekonomi</option>
@@ -93,7 +94,7 @@
                         <option value="filsafat">Filsafat</option>
                     </select>
                 </div>
-                <button class="btn-primary btn-lg btn-block">Filter Student By Falcuty</button>
+                <button class="btn-primary btn-lg btn-block">Filter Student By Faculty</button>
                 <div class="form-group">
                     <h3>Prodi</h3>
                     <select name="prodi" id="prodi" class="form-control">
@@ -118,16 +119,19 @@
         </div>
         <div class="container-fluid mb-5 mt-5">
             <h1>Our Students</h1>
-            <input type="text" name="search" placeholder="search" id="searchbox">
+            <input class ="form-control" type="text" name="search" placeholder="search" id="searchbox">
             <table class="table">
                 <thead>
                     <th>Student ID</th>
                     <th>Name</th>
                     <th>Gender</th>
-                    <th>Falcuty</th>
+                    <th>Faculty</th>
                     <th>Prodi</th>
                     <th>Action</th>
                 </thead>
+                <tbody>
+                    
+                </tbody>
             </table>
         </div>
         <footer class="mt-5">
